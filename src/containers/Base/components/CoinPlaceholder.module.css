@@ -1,0 +1,26 @@
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Circle {
+  /* box-shadow: inset 0px 2px 5px 0px; */
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.coinAnimation{
+  animation: blinker 1s infinite;
+}
+
+@keyframes blinker {
+  70% {
+     opacity: 1;
+     background-color: rgba(240, 78, 61,0.6);
+     /* border: 2px solid rgba(240, 78, 61); */
+   }
+ }

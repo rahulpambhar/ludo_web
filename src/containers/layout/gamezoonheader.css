@@ -1,0 +1,21 @@
+.gameheader{width: 100%;background: #041538;position: relative;float: left;padding: 7px 0px 7px 0px;}
+.info-details1{min-width: 300px;}
+.player{width: 50px;height: 50px;margin-right: 10px;}
+ .ply-name{font-size: 16px;font-weight: normal;text-align: left;color: #ffffff;}
+ .ply-name:before {content: "\f111";font-family: FontAwesome;display: inline-block;margin-right: 8px;color: #37AD00;border-radius: 100px;font-size: 13px;}
+ .flt{float: right;}
+ .gameheader ul{margin: 0px;padding: 0px;}
+ .gameheader ul li{display: inline-block;margin-right: 15px;}
+ .gameheader ul li:last-child{margin-right: 0px;}
+ .navbar-brand{margin-right: 0px;}
+ .brd{padding: 2px;border-radius: 115.909px;background: #243253;}
+
+
+ @media screen and (max-width: 600px) {
+    .info-details1{min-width: auto;}
+    .navbar-brand{margin-bottom: 10px;}
+    .gameheader ul li{margin-right: 10px!important;}
+    .gameheader ul li:last-child{margin-right: 0px!important;}
+    .flex{display: flex;width: 100%;float: right;align-items: center;}
+     .flt{float: none!important;}
+ }

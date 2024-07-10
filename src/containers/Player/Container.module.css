@@ -1,0 +1,48 @@
+.Container {
+  display: flex;
+  flex-grow: 1;
+}
+
+.TopPlacement {
+   position: relative;
+  flex-direction: column;
+}
+
+.BottomPlacement {
+  position: relative;
+  flex-direction: column-reverse;
+}
+
+.Disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.RetiredCoins {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.RetiredCoins > div {
+  margin-bottom: 0;
+}
+/* .avtarbground{background: #041538;border-radius: 10px;padding: 7px;} */
+
+
+
+/* responsive.css */
+@media screen and (max-width: 61.938em) {
+  .TopPlacement {
+    position: relative;
+   flex-direction: row;
+   align-items: center;
+   margin-top: 20px;
+ }
+ .username{position: absolute;width: 100%;top: -27px;}
+ .BottomPlacement {  position: relative;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;}
+  .diebg{border-radius: 3px;}
+}

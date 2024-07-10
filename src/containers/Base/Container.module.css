@@ -1,0 +1,53 @@
+.OuterContainer1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.OuterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.InnerContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  /* box-shadow: 0px 2px 5px 0px; */
+}
+
+.Spawnable {
+  /* box-shadow: 0px 2px 30px 0px #FFFFFF; */
+}
+.OuterContainer::before {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  animation-delay: 0s;
+  animation: pulsate-btn 1s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius:0px;
+  border: 8px solid #ffffff;
+
+  background: rgba(198, 16, 0, 0);
+}
+
+@keyframes pulsate-btn {
+0% {
+  transform: scale(0.6, 0.6);
+  opacity: 1;
+}
+
+100% {
+  transform: scale(1, 1);
+  opacity: 0;
+}
+}
